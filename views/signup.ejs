@@ -1,0 +1,15 @@
+<h1>Create your account</h1>
+<div>
+    <form action="/register" method="POST">
+        <label for="username">Username</label>
+        <input id="input-username" type="text" name="username" placeholder="Enter username" required><br>
+        <label for="name">Name</label>
+        <input id="input-name" type="text" name="name" placeholder="Enter name" required><br>
+        <label for="email">Email</label>
+        <input id="input-email" type="email" name="email" placeholder="Enter email" required><br>
+        <label for="password">Password</label>
+        <input id="input-password" type="password" name="password" placeholder="Enter password" required><br>
+        <button id="submit">Create account</button>
+    </form>
+    <p><%=errors[0]%></p>
+</div>

@@ -1,0 +1,36 @@
+{
+  "name": "chitter-challenge",
+  "version": "1.0.0",
+  "description": "Twitter clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "start": "npx nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantwhiteman/chitter-challenge.git"
+  },
+  "author": "grant whiteman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grantwhiteman/chitter-challenge/issues"
+  },
+  "homepage": "https://github.com/grantwhiteman/chitter-challenge#readme",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "jasmine": "^3.8.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
+  }
+}

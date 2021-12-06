@@ -1,0 +1,18 @@
+<h1>Chitter</h1>
+
+<% if (currentUser) { %>
+    <h2>Post a peep:</h2>
+    <form action="/peeps" method="POST">
+        <input id="input-peep" type="text" name="peep" placeholder="What's on your mind?" required>
+        <button id="submit-peep">Share!</button>
+    </form>
+<% } %>
+<div id="peeps">
+    <% peeps.forEach(peep => { %>
+    <div>
+        <p><%=peep.User.username%></p>
+        <p><%=peep.text%></p>
+        <p><%=peep.createdAt%></p>
+    </div>
+    <% }) %>
+</div>

@@ -1,0 +1,11 @@
+<h1>Log in</h1>
+<div>
+    <form action="/login" method="POST">
+        <label for="email">Email</label>
+        <input id="input-email" type="email" name="email" placeholder="Enter email" required>
+        <label for="password">Password</label>
+        <input id="input-password" type="password" name="password" placeholder="Enter password" required>
+        <button id="submit">Log in</button>
+    </form>
+    <p><%=errors[0]%></p>
+</div>
